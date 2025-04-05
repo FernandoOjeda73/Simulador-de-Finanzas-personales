@@ -94,7 +94,8 @@ function mostrarMovimientos(){
         }
         const cuotaActual = dato.cuotas > 1 ? ` - Cuota ${diferenciaMeses + 1}/${dato.cuotas}` : "";
         const li = document.createElement("li");
-        li.textContent =`${fechaMovimiento.toLocaleDateString("es-AR")} - ${dato.descripcion} - ${dato.monto} ${cuotaActual}`;
+        li.classList.add(dato.tipo === "ingreso" ? "ingreso" : "gasto");
+        li.textContent =`${fechaMovimiento.toLocaleDateString("es-AR")} - ${dato.descripcion} - $${dato.monto} ${cuotaActual}`;
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         const btnEliminar = document.createElement("button");
         btnEliminar.textContent = "Eliminar";

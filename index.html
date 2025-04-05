@@ -10,19 +10,21 @@
     <div class="container">
         <h1>Simulador de Presupuesto</h1>
         <form id="nuevoRegistro">
-        <select id="operacionTipo">
-            <option value="" selected disabled>Selecciona una opción</option>
-            <option value="ingreso">Ingreso</option>
-            <option value="gasto">Gasto</option>
-        </select>
-        <div id="subOperacionTipo"></div>
-        <div id="cuotas"></div>
-        <select id="fijo">
-            <option value="si">Si</option>
-            <option value="no">No</option>
-        </select>
-        <input id="monto" type="number" placeholder="monto" required>
-        <button type="submit">Agregar</button>
+            <label for="operacionTipo">Seleccione tipo de operacion:</label>
+            <select id="operacionTipo">
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option value="ingreso">Ingreso</option>
+                <option value="gasto">Gasto</option>
+            </select>
+            <div id="subOperacionTipo"></div>
+            <div id="cuotas"></div>
+            <label for="fijo">Es un gasto fijo?</label>
+            <select id="fijo">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+            </select>
+            <input id="monto" type="number" placeholder="monto" required>
+            <button type="submit">Agregar</button>
         </form>  
     </div>
     <div>
