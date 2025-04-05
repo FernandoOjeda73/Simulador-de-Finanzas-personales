@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mi Presupuesto</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Presupuesto</h1>
+        <form id="nuevoRegistro">
+        <select id="operacionTipo">
+            <option value="" selected disabled>Selecciona una opción</option>
+            <option value="ingreso">Ingreso</option>
+            <option value="gasto">Gasto</option>
+        </select>
+        <div id="subOperacionTipo"></div>
+        <div id="cuotas"></div>
+        <select id="fijo">
+            <option value="si">Si</option>
+            <option value="no">No</option>
+        </select>
+        <input id="monto" type="number" placeholder="monto" required>
+        <button type="submit">Agregar</button>
+        </form>  
+    </div>
+    <div>
+        <h2>Moviemientos</h2>
+        <ul id="listaMovimientos"></ul>
+    </div>
+
+  <script src="./JS/app.js"></script>
+</body>
+</html>
